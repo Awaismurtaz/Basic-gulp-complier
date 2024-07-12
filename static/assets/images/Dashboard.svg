@@ -1,0 +1,22 @@
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+  <g id="Dashboard" transform="translate(0 0.5)">
+    <rect id="Rectangle_172" data-name="Rectangle 172" width="7" height="6" rx="2" transform="translate(0 -0.5)" fill="#707070"/>
+    <rect id="Rectangle_173" data-name="Rectangle 173" width="7" height="8" rx="2" transform="translate(8 -0.5)" fill="#707070"/>
+    <rect id="Rectangle_174" data-name="Rectangle 174" width="7" height="8" rx="2" transform="translate(0 6.5)" fill="#707070"/>
+    <rect id="Rectangle_175" data-name="Rectangle 175" width="7" height="6" rx="2" transform="translate(8 8.5)" fill="#707070"/>
+  </g>
+</svg> -->
+
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+<g clip-path="url(#clip0_20_2)">
+<path d="M5 0H2C0.89543 0 0 0.89543 0 2V4C0 5.10457 0.89543 6 2 6H5C6.10457 6 7 5.10457 7 4V2C7 0.89543 6.10457 0 5 0Z" fill="#707070"/>
+<path d="M13 0H10C8.89543 0 8 0.89543 8 2V6C8 7.10457 8.89543 8 10 8H13C14.1046 8 15 7.10457 15 6V2C15 0.89543 14.1046 0 13 0Z" fill="#707070"/>
+<path d="M5 7H2C0.89543 7 0 7.89543 0 9V13C0 14.1046 0.89543 15 2 15H5C6.10457 15 7 14.1046 7 13V9C7 7.89543 6.10457 7 5 7Z" fill="#707070"/>
+<path d="M13 9H10C8.89543 9 8 9.89543 8 11V13C8 14.1046 8.89543 15 10 15H13C14.1046 15 15 14.1046 15 13V11C15 9.89543 14.1046 9 13 9Z" fill="#707070"/>
+</g>
+<defs>
+<clipPath id="clip0_20_2">
+<rect width="15" height="15" fill="white"/>
+</clipPath>
+</defs>
+</svg>

@@ -1,0 +1,268 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../static/assets/js/bootstrap.min.js"></script>
+
+
+<!-- <script src="assets/plugins/icheck-1.0.2/icheck.js"></script> -->
+
+
+<!-- <script src="assets/plugins/js/"></script> -->
+<script src="../../static/assets//js/main.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+    integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.testimonials-slide').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+
+<script>
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = document.querySelectorAll('#toc a');
+
+        links.forEach(function (link) {
+            link.addEventListener('click', function () {
+                // Remove active class from all links
+                links.forEach(function (link) {
+                    link.classList.remove('active');
+                });
+
+                // Add active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    });
+
+
+    const activeitem = window.location.pathname;
+
+    if (activeitem === "/build/home.html") {
+        $("#home").addClass("active");
+    } else if (activeitem === "/build/features.html") {
+        $("#feature").addClass("active");
+    } else if (activeitem === "/build/about-us.html") {
+        $("#aboutUs").addClass("active");
+    } else if (activeitem === "/build/pricing.html") {
+        $("#pricing").addClass("active");
+    } else if (activeitem === "/build/contactUs.html") {
+        $("#contactUs").addClass("active");
+    } else if (activeitem === "/build/chrome-extension.html") {
+        $("#chromeExtension").addClass("active");
+    }
+
+
+    //    common URl
+
+    const baseUrl = "https://dev-api.scrumslate.com/api"
+    // api call in home page Subscribe For Update form
+    const subscribeValue = $("#subscribeValue");
+    const subscribeButton = $("#subscibe_btn"); // corrected typo
+    subscribeButton.prop("disabled", true);
+
+    function isValidEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    subscribeValue.on("input", function () {
+        const inputValue = subscribeValue.val();
+        console.log("Current input value:", inputValue);
+        if (isValidEmail(inputValue)) {
+            subscribeButton.prop("disabled", false);
+        } else {
+            subscribeButton.prop("disabled", true);
+        }
+    });
+
+    $(document).ready(function () {
+
+
+        $("#subscriptionFrom").on("submit", function (event) {
+            event.preventDefault();
+            const inputValue = subscribeValue.val();
+
+            const data = { email: inputValue };
+
+            const url = `${baseUrl}/subcribe-for-newsletter`;
+
+            axios.post(url, data, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(function (response) {
+                    $("#subscriptionFrom")[0].reset();
+                    Toastify({
+                        text: "Success! You've subscribed to the Newsletter",
+                        duration: 3000, // 3 seconds
+                        gravity: "top",
+                        close: true, // Display toast at the top
+                        position: "right", // Align toast to the right
+                        backgroundColor: "#ffff", // Custom background color
+                        style: {
+                            color: "#0009" // Custom text color
+                        }
+                    }).showToast();
+                    console.log("Success:", response.data);
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        });
+    });
+
+
+    // call api in contact us page
+
+
+    const contactForm = $("#contactUsFrom");
+    const name = $("#name");
+    const email = $("#email");
+    const message = $("#message");
+
+    $(document).ready(function () {
+        contactForm.on("submit", function (event) {
+            event.preventDefault();
+
+            const nameValue = name.val();
+            const emailValue = email.val();
+            const messageValue = message.val();
+
+            const formValues = {
+                name: nameValue,
+                email: emailValue,
+                message: messageValue
+            };
+
+            const contactUrl = `${baseUrl}/contact-us`;
+            axios.post(contactUrl, formValues, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(function (response) {
+                    contactForm[0].reset();
+                    Toastify({
+                        text: response.data.message,
+                        duration: 3000,
+                        gravity: "top",
+                        close: true,
+                        position: "right",
+                        backgroundColor: "#ffff",
+                        style: {
+                            color: "#0009"
+                        }
+                    }).showToast();
+                    console.log("Success:", response.data);
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        });
+
+        // save comment message
+
+        $("#saveButton").click(function (event) {
+            event.preventDefault();
+            const commentMessage = $("#commentFiled").val().trim();
+            if (!commentMessage) {
+                Toastify({
+                    text: `Warning! Please add comment here`,
+                    duration: 3000, // 3 seconds
+                    gravity: "top",
+                    close: true, // Display toast at the top
+                    position: "right", // Align toast to the right
+                    backgroundColor: "#ffff", // Custom background color
+                    style: {
+                        color: "#0009" // Custom text color
+                    }
+                }).showToast();
+                return;
+            }
+            const currentDate = new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric"
+            });
+
+            const newComment = `
+            <div class="file_comment" >
+                <div class="file_comment_user">
+                    <div style="width: 24px; height: 24px; background-color: rgb(0, 83, 35); color: rgb(255, 255, 255); text-align: center; line-height: 24px; font-size: 12px; font-weight: 500; border-radius: 6px;">
+                        G
+                    </div>
+                </div>
+                <div class="file_comment_detail ms-3">
+                    <div class="d-flex align-items-center">
+                        <span class="file_comment_userName textEllipse text-capitalize f-14 add_cursor" aria-label="Guest">guest </span>
+                        <span class="file_comment_time ms-3 f-12">${currentDate}</span>
+                    </div>
+                    <p class="file_comment_text mb-0 capitalize-first f-14">${commentMessage}</p>
+                </div>
+            </div>
+    
+    `;
+
+            $("#commentBox").append(newComment);
+            $("#commentFiled").val('');
+
+
+        });
+
+    });
+
+
+
+
+</script>

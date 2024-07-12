@@ -1,0 +1,9 @@
+node_modules/
+*.psd
+*.zip
+.sass-cache
+_assets/
+compass_temp_assets
+run.sh
+push.sh
+git.sh

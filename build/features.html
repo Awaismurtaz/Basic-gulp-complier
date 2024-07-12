@@ -1,0 +1,676 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../../build/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/assets/font-awesome/css/font-awesome.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <!-- <link rel="stylesheet" href="assets/plugins/icheck-1.0.2/skins/minimal/grey.css">
+    
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-dropdown/dropdown.css">
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-icon/icon.min.css">
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-image/image.min.css">
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-label/label.min.css">
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-transition/transition.css">
+    
+    <link rel="stylesheet" href="assets/plugins/"> -->
+    
+    <link rel="stylesheet" href="../../build/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="wrap">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary landing_navbar_main">
+            <div class="container__land publicNavbar ">
+                <a class="navbar-brand" href="/build/home"><img src="../../static/assets/images/scrum-slate-logo.svg"
+                        alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar_collapse_landing_page collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav list_nav Landding_page_navbar">
+                        <li class="nav-item"><a class="nav-bar-link" id="home" href="/build/home">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-bar-link" id="feature" href="/build/features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-bar-link" id="aboutUs" href="/build/about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-bar-link" id="pricing" href="/build/pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-bar-link" id="contactUs" href="/build/contactUs">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-bar-link" id="chromeExtension" href="/build/chrome-extension">Extension</a>
+                        </li>
+                    </ul>
+                    <div class="search_button">
+                        <button class="btn btn-primary sign-in">Sign In</button>
+                        <button class="btn btn-primary btn__signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<div class="featurs_page mb-5">
+    <div class="container__land">
+        <div class="text-center top-text top-text-features">
+            <h1 class="feature_page_heading responsive_heading">Features</h1>
+            <p class=" mt-1 responsive_text">Home/Features</p>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="features_card_section">
+    <div class="container__land">
+        <div class="meta-cards">
+            <div class="row landing_page_row ">
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-3">
+                    <div class="card feature-cards ">
+                        <div class="feature_card_image text-center mt-4">
+                            <img src="../static/assets/images/feature-backlog-img.svg" class="images" alt="Task">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title responsive_small_heading">Backlog Management</h5>
+                            <p class="card-text paragraph responsive_text">Create and prioritize features and
+                                enhancements for upcoming sprints
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-12 mb-3">
+                    <div class="card feature-cards carding ">
+                        <div class="feature_card_image colrd text-center mt-4 feature_card_image-sharing">
+                            <img src="../static/assets/images/Screen-sahring-img.svg" class="images" alt="Team">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title responsive_small_heading">Screen Sharing</h5>
+                            <p class="card-text paragraph responsive_text">Effortlessly record video messages and share
+                                with your team
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-sx-12 mb-3 ">
+                    <div class="card feature-cards ">
+                        <div class="feature_card_image text-center mt-4">
+                            <img src="../static/assets/images/feature-delivery-img.svg" class="images"
+                                alt="Conversation">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title responsive_small_heading">Delivery Tracking</h5>
+                            <p class="card-text paragraph responsive_text">Set goals, track team velocity, predict the
+                                release and see if you’re on track or not
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 col-sx-12 mb-3 ">
+                    <div class="card feature-cards bugs ">
+                        <div class="feature_card_image clor text-center mt-4">
+                            <img src="../static/assets/images/Bug.png" alt="Bug Report">
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title responsive_small_heading">Bug Reporting</h5>
+                            <p class="card-text paragraph responsive_text">Quickly identify, prioritize and document
+                                relative bugs within the tasks
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="project decrease__padding task-fearter-div">
+    <div class="container__fearter">
+        <div class="text-center">
+            <h3 class="project-class main-text responsive_heading">Task &amp; Workflow Management</h3>
+        </div>
+        <div class="row mt-5 align-items-center">
+            <div class="col-md-6 cads__width">
+                <div class="cads">
+                    <p class="paragraph responsive_small_heading"><b>Tasks &amp; Subtasks:</b></p>
+                    <p class="pargraph-body mt-2 responsive_text">Write user stories, break them into small subtasks,
+                        set priorities, due date and assign them to team members.
+                    </p>
+                </div>
+                <br>
+                <div class="cads cads__center">
+                    <p class="paragraph responsive_small_heading"><b>Custom Statuses:</b></p>
+                    <p class="pargraph-body mt-2 responsive_text">Define unique statuses for your project, like
+                        'in-review' and 'on-hold', to accurately reflect the current state of work.
+                    </p>
+                </div>
+                <br>
+                <div class="cads">
+                    <p class="paragraph responsive_small_heading"><b>Bugs Tracking:</b></p>
+                    <p class="pargraph-body mt-2 responsive_text">Efficiently track and manage bugs directly within
+                        tasks and resolve them alongside other task-related activities.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 cads__colmn fearter-image">
+                <div class="crop-container">
+                    <img src="../static/assets/images/firstImage.png" alt="Cropped Image" class="cropped-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="project bgs task_section agile-main-div">
+    <div class="container__fearter container-m">
+        <div class="text-center">
+            <h3 class="mian-text responsive_heading">Agile Planning &amp; Tracking </h3>
+        </div>
+        <div class="row mt-5 mb-5rm align-items-center">
+            <div class="col-md-6  cads__colmn feature-agile">
+                <div class="crop-container img-iss">
+                    <img src="../static/assets/images/Report12.png" alt="Cropped Image" class="cropped-image  mt-2">
+                </div>
+            </div>
+            <div class="col-md-6 cads__width">
+                <div class="cads new">
+                    <p class="paragraph responsive_small_heading"><b>Sprints:</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Define sprint period, set goals, allocate tasks to
+                        team members, and monitor progress in real time.
+                    </p>
+                </div>
+                <br>
+                <div class="cads ms-4">
+                    <p class="paragraph responsive_small_heading"><b>Backlog:</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Create task lists in the backlog to smartly plan and
+                        strategies your user stories, feature requests, and tasks for future sprints or releases.
+                    </p>
+                </div>
+                <br>
+                <div class="cads new">
+                    <p class="paragraph responsive_small_heading"><b>Progress Board:</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Track task movement through various stages on
+                        customizable boards to limit work-in-progress, and maximize team’s efficiencies.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="project decrease__padding collaboration-div">
+    <div class="container__fearter">
+        <div class="text-center">
+            <h3 class="mian-text mani-com responsive_heading ">Collaboration &amp; Communication</h3>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-6 cads__width">
+                <div class="cads reporting_card">
+                    <p class="paragraph "><b class="responsive_small_heading">Video Sharing:</b></p>
+                    <p class="pargraph-body mt-2 responsive_text ">Record audio and video messages within tasks to share
+                        updates, tasks details and seek feedback from the team
+                    </p>
+                </div>
+                <br>
+                <div class="cads cads__center">
+                    <p class="paragraph"><b class="responsive_small_heading">Teams Management:</b></p>
+                    <p class="pargraph-body mt-2 responsive_text">Organize team members into groups and manage
+                        permissions. Add team members in projects, assign tasks and keep track of their velocity.
+                    </p>
+                </div>
+                <br>
+                <div class="cads">
+                    <p class="paragraph"><b class="responsive_small_heading">Files:</b></p>
+                    <p class="pargraph-body mt-2 responsive_text">Effortlessly create and maintain important project
+                        documentation, files, and team guidelines at one place for easy reference and knowledge sharing.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 cads__colmn features-collaboration ">
+                <div class="crop-container">
+                    <img src="../static/assets/images/conversation2.png" alt="Cropped Image"
+                        class="cropped-image height-issue">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="project bgs mb-5 mt-0 feature-Smart-div">
+    <div class="container__fearter container-m">
+        <div class="text-center">
+            <h3 class="reports mian-text responsive_heading">Smart Tools &amp; Integrations</h3>
+        </div>
+        <div class="row mt-5 reporting_row align-items-center">
+            <div class="col-md-6 cads__colmn feature-Smart-T">
+                <div class="crop-container img-iss">
+                    <img src="../static/assets/images/people11.png" alt="Cropped Image" class="cropped-image mt-2">
+                </div>
+            </div>
+            <div class="col-md-6 cads__width">
+                <div class="cads new">
+                    <p class="paragraph responsive_small_heading"><b>AI:</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Use AI to generate tasks from audio and video
+                        messages. Refine task detail and generate description with title.
+                    </p>
+                </div>
+                <br>
+                <div class="cads reporting_card">
+                    <p class="paragraph responsive_small_heading"><b>Calendar:</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Keep track of important dates, such as sprint start
+                        and end dates, task due dates, and team meetings for better project planning and coordination.
+                    </p>
+                </div>
+                <br>
+                <div class="cads new">
+                    <p class="paragraph responsive_small_heading"><b>Kanban Boards:</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Organize tasks into columns representing different
+                        stages of progress, such as "To Do," "In Progress," and "Done," for improved progress tracking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="project project-team decrease__padding reports-div">
+    <div class="container__fearter">
+        <div class="text-center">
+            <h3 class="mian-text responsive_heading">Reports &amp; Analytics</h3>
+        </div>
+        <div class="row mt-5 align-items-center">
+            <div class="col-md-6 cads__width">
+                <div class="cads reporting_card">
+                    <p class="paragraph responsive_small_heading"><b>Burn up &amp; Burn Down charts:</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Track completed work versus planned, identify trends,
+                        and make data-driven decisions to stay on course towards project goals.
+                    </p>
+                </div>
+                <br>
+                <div class="cads cads__center">
+                    <p class="paragraph responsive_small_heading"><b>Project Overview :</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Gain a holistic view of project status, including task
+                        progress, milestones achieved, and upcoming deadlines, for informed decision-making and
+                        reporting purposes.
+                    </p>
+                </div>
+                <br>
+                <div class="cads">
+                    <p class="paragraph responsive_small_heading"><b>Sprints Reports:</b></p>
+                    <p class="pargraph-body responsive_text mt-2">Analyze sprint metrics like team velocity, burn-up,
+                        burn down reports to see what went well and what needs to improve in upcoming sprint.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 cads__colmn feature-reports">
+                <div class="crop-container">
+                    <img src="../static/assets/images/projectD1.png" alt="Cropped Image" class="cropped-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer_wrapper linear-bg py-5 ">
+  <div class="footer_content_wrapper">
+    <div class="prob_padding">
+      <div class="container__land">
+        <div class="row ">
+          <div class="col-md-3 col-sm-3 col-sx-12">
+            <img class="cursor_pointer" src="../../static/assets/images/scrum-slate-logo.svg">
+            <p class="logo_para responsive_text mt-4">Discover a tool designed to transform your vision into reality,
+              one step at a time.</p>
+            <div class="d-flex mt-4 ad-mrgin"><a href="https://www.facebook.com/scrumslate1/" target="_blank"
+                rel="noopener noreferrer" class="btn zack mx-1">
+                <img class="mx-1" src="../../static/assets/images/facebook.svg" alt="Facebook"></a><a
+                href="https://www.linkedin.com/company/scrum-slate/" target="_blank" rel="noopener noreferrer"
+                class="btn zack mx-1">
+                <img class="mx-1" src="../../static/assets/images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-sx-12 footer_col_four">
+            <h4 class="responsive_small_heading fw-6 ">Links</h4>
+            <ul class="list-unstyled">
+              <li class="responsive_text"><a class="homes" href="/build/home">Home</a></li>
+              <li class="responsive_text"><a href="/build/features">Features</a></li>
+              <li class="responsive_text"><a href="/build/about-us">About Us</a></li>
+              <li class="responsive_text"><a href="/build/chrome-extension">Extension</a></li>
+              <li class="responsive_text"><a href="#">Mobile App</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-sx-12 footer_col_four fits">
+            <h4 class="responsive_small_heading fw-6">Go Agile</h4>
+            <ul class="list-unstyled">
+              <li class="responsive_text"><a href="/build/agile">What is Agile?</a></li>
+              <li class="responsive_text"><a href="/build/kanban">Scrum VS Kanban</a></li>
+              <li class="responsive_text"><a href="/build/backlog-refinement">Backlog Refinement</a></li>
+              <li class="responsive_text"><a href="/build/sprint-planing">Sprint Planing</a></li>
+              <li class="responsive_text"><a href="/build/bug-tracking">Bug Tracking</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3  col-sx-12 footer_col_four rutes">
+            <h4 class="responsive_small_heading fw-6">Resources</h4>
+            <ul class="list-unstyled">
+              <li class="responsive_text"><a href="/build/contactUs">Contact Us</a></li>
+              <li class="responsive_text"><a href="#">Latest Updates</a></li>
+              <li class="responsive_text"><a href="#">Help Doc</a></li>
+              <li class="responsive_text"><a href="/build/privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- /wrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../static/assets/js/bootstrap.min.js"></script>
+
+
+<!-- <script src="assets/plugins/icheck-1.0.2/icheck.js"></script> -->
+
+
+<!-- <script src="assets/plugins/js/"></script> -->
+<script src="../../static/assets//js/main.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+    integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.testimonials-slide').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+
+<script>
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = document.querySelectorAll('#toc a');
+
+        links.forEach(function (link) {
+            link.addEventListener('click', function () {
+                // Remove active class from all links
+                links.forEach(function (link) {
+                    link.classList.remove('active');
+                });
+
+                // Add active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    });
+
+
+    const activeitem = window.location.pathname;
+
+    if (activeitem === "/build/home.html") {
+        $("#home").addClass("active");
+    } else if (activeitem === "/build/features.html") {
+        $("#feature").addClass("active");
+    } else if (activeitem === "/build/about-us.html") {
+        $("#aboutUs").addClass("active");
+    } else if (activeitem === "/build/pricing.html") {
+        $("#pricing").addClass("active");
+    } else if (activeitem === "/build/contactUs.html") {
+        $("#contactUs").addClass("active");
+    } else if (activeitem === "/build/chrome-extension.html") {
+        $("#chromeExtension").addClass("active");
+    }
+
+
+    //    common URl
+
+    const baseUrl = "https://dev-api.scrumslate.com/api"
+    // api call in home page Subscribe For Update form
+    const subscribeValue = $("#subscribeValue");
+    const subscribeButton = $("#subscibe_btn"); // corrected typo
+    subscribeButton.prop("disabled", true);
+
+    function isValidEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    subscribeValue.on("input", function () {
+        const inputValue = subscribeValue.val();
+        console.log("Current input value:", inputValue);
+        if (isValidEmail(inputValue)) {
+            subscribeButton.prop("disabled", false);
+        } else {
+            subscribeButton.prop("disabled", true);
+        }
+    });
+
+    $(document).ready(function () {
+
+
+        $("#subscriptionFrom").on("submit", function (event) {
+            event.preventDefault();
+            const inputValue = subscribeValue.val();
+
+            const data = { email: inputValue };
+
+            const url = `${baseUrl}/subcribe-for-newsletter`;
+
+            axios.post(url, data, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(function (response) {
+                    $("#subscriptionFrom")[0].reset();
+                    Toastify({
+                        text: "Success! You've subscribed to the Newsletter",
+                        duration: 3000, // 3 seconds
+                        gravity: "top",
+                        close: true, // Display toast at the top
+                        position: "right", // Align toast to the right
+                        backgroundColor: "#ffff", // Custom background color
+                        style: {
+                            color: "#0009" // Custom text color
+                        }
+                    }).showToast();
+                    console.log("Success:", response.data);
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        });
+    });
+
+
+    // call api in contact us page
+
+
+    const contactForm = $("#contactUsFrom");
+    const name = $("#name");
+    const email = $("#email");
+    const message = $("#message");
+
+    $(document).ready(function () {
+        contactForm.on("submit", function (event) {
+            event.preventDefault();
+
+            const nameValue = name.val();
+            const emailValue = email.val();
+            const messageValue = message.val();
+
+            const formValues = {
+                name: nameValue,
+                email: emailValue,
+                message: messageValue
+            };
+
+            const contactUrl = `${baseUrl}/contact-us`;
+            axios.post(contactUrl, formValues, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(function (response) {
+                    contactForm[0].reset();
+                    Toastify({
+                        text: response.data.message,
+                        duration: 3000,
+                        gravity: "top",
+                        close: true,
+                        position: "right",
+                        backgroundColor: "#ffff",
+                        style: {
+                            color: "#0009"
+                        }
+                    }).showToast();
+                    console.log("Success:", response.data);
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        });
+
+        // save comment message
+
+        $("#saveButton").click(function (event) {
+            event.preventDefault();
+            const commentMessage = $("#commentFiled").val().trim();
+            if (!commentMessage) {
+                Toastify({
+                    text: `Warning! Please add comment here`,
+                    duration: 3000, // 3 seconds
+                    gravity: "top",
+                    close: true, // Display toast at the top
+                    position: "right", // Align toast to the right
+                    backgroundColor: "#ffff", // Custom background color
+                    style: {
+                        color: "#0009" // Custom text color
+                    }
+                }).showToast();
+                return;
+            }
+            const currentDate = new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric"
+            });
+
+            const newComment = `
+            <div class="file_comment" >
+                <div class="file_comment_user">
+                    <div style="width: 24px; height: 24px; background-color: rgb(0, 83, 35); color: rgb(255, 255, 255); text-align: center; line-height: 24px; font-size: 12px; font-weight: 500; border-radius: 6px;">
+                        G
+                    </div>
+                </div>
+                <div class="file_comment_detail ms-3">
+                    <div class="d-flex align-items-center">
+                        <span class="file_comment_userName textEllipse text-capitalize f-14 add_cursor" aria-label="Guest">guest </span>
+                        <span class="file_comment_time ms-3 f-12">${currentDate}</span>
+                    </div>
+                    <p class="file_comment_text mb-0 capitalize-first f-14">${commentMessage}</p>
+                </div>
+            </div>
+    
+    `;
+
+            $("#commentBox").append(newComment);
+            $("#commentFiled").val('');
+
+
+        });
+
+    });
+
+
+
+
+</script>
+
+<script type="text/javascript">
+  var style = 'assets/css/style.css?' + Math.random();;
+</script>
+
+<script type="text/javascript">
+  document.write('<link href="' + style + '" rel="stylesheet">');
+</script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+/* 
+ * ----------------------------------------------------------------------------------------
+ * Global Style.
+ * ----------------------------------------------------------------------------------------
+ */
+ 
+
+
+
+
+// body {
+//    font-family: 'arial', sans-serif;
+//  }
+
+//  h2, h3, h4, h5, h6 {
+//    font-family: 'Nunito', sans-serif;
+//  }
+
+//  p, a {
+//    font-family: 'arial', sans-serif;
+//  }
+
+
+
+
+//  h1 {
+
+//  	// semibold 
+//  	font-family: "proxima-nova-semibold",sans-serif;
+//  	font-size: 32px;
+//  	line-height: 44px;
+//  	color: #393c3e; 
+
+//  }
+
+
+//  h2 {
+//  	//regular
+//  	font-size: 22px;
+//  	line-height: 32px;
+//  	color: #393c3e; 
+ 	
+//  }
+
+
+//  h3 {
+//  	font-size: 20px;
+//  	line-height: 28px;
+//  	color: #393c3e; 
+ 	
+//  }
+
+
+// p {
+//  	font-size: 16px;
+//  	line-height: 24px;
+//  	color: #71787e; 
+ 	
+//  }
+
+//  a {
+
+//  	// semibold 
+//  	font-size: 16px;
+//  	line-height: 24px;
+//  	color: #00aeef;
+//  	&:hover , &:focus {
+//  		color: #009ad4;
+//  	}
+//  }
+
+
+h4 { margin: 0; }
+
+h5 { margin: 0; font-weight: bold;  }
+
+p { margin: 0; }
+
+
+
+ .icon-info {
+ 	 display: inline-block;
+ 	 background-image: url("../images/icon-set.png");
+ 	 background-repeat: no-repeat;
+ 	 
+ 	 background-position: 0px -53px;
+ 	 width: 40px;
+ 	 height: 40px;
+	
+	&.active  {
+		 background-position: 0px -96px;
+	}
+
+ }

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192">
+  <g id="Logo_icon" data-name="Logo icon" transform="translate(4347 754)">
+    <rect id="Rectangle_1388" data-name="Rectangle 1388" width="192" height="192" transform="translate(-4347 -754)" fill="#fff" opacity="0"/>
+    <g id="Group_1839" data-name="Group 1839" transform="translate(-4327 -754)">
+      <rect id="Rectangle_1383" data-name="Rectangle 1383" width="29.223" height="29.223" rx="14.612" transform="translate(79.538 51.476)" fill="#0052cc"/>
+      <rect id="Rectangle_1384" data-name="Rectangle 1384" width="30" height="69.017" rx="15" transform="translate(45.631 102.244) rotate(-45)" fill="#004c89"/>
+      <path id="Path_1882" data-name="Path 1882" d="M297.034,245.1a15,15,0,0,1,21.213,0h0a15,15,0,0,1,0,21.213l-42.427,42.426a15,15,0,0,1-21.213,0L244,298.137Z" transform="translate(-170.801 -168.497)" fill="#0052cc"/>
+      <path id="Path_1883" data-name="Path 1883" d="M88.5,19.2V14.74A81.622,81.622,0,0,0,14.707,88.875H19.05a7.2,7.2,0,1,1,0,14.4H14.72A81.622,81.622,0,0,0,88.8,177.287V173.1a7.2,7.2,0,1,1,14.4,0V192H96l-7.2-.266A96.005,96.005,0,0,1,88.5.289L96,0h6.9V19.2a7.2,7.2,0,1,1-14.4,0Z" transform="translate(0)" fill="#0052cc" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

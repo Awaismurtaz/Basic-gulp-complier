@@ -1,0 +1,47 @@
+// /* -----------------------------
+// -------- form-control label
+//  ------------------------------*/
+// $padding-base-vertical:   6px;
+// $padding-base-horizontal: 12px;
+// .form-control {
+//   padding: $padding-base-vertical $padding-base-horizontal;
+//   font-size: 14px;
+//   line-height: 1.42857143;
+//   color: #555; //dark-gray
+//   background-color: #fff;
+//   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+//   border: 1px solid #ccc; //light-gray
+//   border-radius:4px; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
+//   webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+//           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+//   webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+//           box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+
+//   // Customize the `:focus` state to imitate native WebKit styles.
+//   &:focus {
+//   border-color: #66afe9; //blue
+//   outline: 0;
+//   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+//           box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+//   }
+//   // Placeholder
+//   &::-moz-placeholder {
+//     color: #000; //dark gray
+//     opacity: 1;
+//   }
+//   &:-ms-input-placeholder {
+//     color: #000; //dark gray
+//   }
+//   &::-webkit-input-placeholder {
+//     color: #000; //dark gray
+//   }
+
+// }
+
+// label {
+//   display: inline-block;
+//   max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+//   margin-bottom: 5px;
+//   font-weight: bold;
+//   //font-weight: font-size;
+// }

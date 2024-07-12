@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="900" viewBox="0 0 1440 900">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_1051" data-name="Rectangle 1051" width="1440" height="900" fill="#0052cc" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_8" data-name="Mask Group 8" clip-path="url(#clip-path)">
+    <g id="Group_1335" data-name="Group 1335">
+      <g id="Rectangle_1050" data-name="Rectangle 1050" fill="#0052cc" stroke="#707070" stroke-width="1">
+        <rect width="1440" height="900" stroke="none"/>
+        <rect x="0.5" y="0.5" width="1439" height="899" fill="none"/>
+      </g>
+      <path id="Path_1055" data-name="Path 1055" d="M-10086,1606s75.716,209.537,321.282,223.333,300.749,129.681,311.786,248.326,179.347,132.44,179.347,132.44V1606Z" transform="translate(10715 -1606)" fill="#0052cc" opacity="0.53" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_1056" data-name="Path 1056" d="M-10716,1934.181s54.55,220.734,170.436,253.844,234.656,115.885,263.564,206.938,4.2,106.188,0,111.037-434,0-434,0Z" transform="translate(10715 -1606)" fill="#0052cc" opacity="0.53" style="mix-blend-mode: multiply;isolation: isolate"/>
+      <path id="Path_1057" data-name="Path 1057" d="M-9996,2506s206.45-210.367,336.131-193.812,113.126,217.975,113.126,217.975Z" transform="translate(10715 -1606)" fill="#0052cc" opacity="0.53" style="mix-blend-mode: multiply;isolation: isolate"/>
+    </g>
+  </g>
+</svg>

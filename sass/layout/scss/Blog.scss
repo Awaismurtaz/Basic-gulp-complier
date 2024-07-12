@@ -1,0 +1,63 @@
+// agile page start
+
+.fz-14 {
+  font-size: 14px;
+}
+
+.agile_card_section {
+  margin-top: 100px;
+
+  li {
+    margin-top: 15px;
+
+    a {
+      color: #0052cc;
+      &:hover {
+        color: #0052cc;
+      }
+    }
+  }
+}
+
+.list_unstyle {
+  li {
+    list-style: none;
+  }
+}
+
+.backlog-details {
+  li {
+    font-size: 16px;
+  }
+}
+
+.refinement {
+  margin-left: 16px;
+  li {
+    font-size: 16px;
+  }
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+#toc li a.active {
+  color: #757575;
+}
+
+.f-s-20 {
+  font-size: 20px !important;
+}
+
+.padding-b-blog {
+  padding-bottom: 83px !important;
+}
+
+.agile__content {
+  padding-left: 116px !important;
+}
+
+.padding-top-19 {
+  padding-top: 19px !important;
+}

@@ -1,0 +1,579 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="../../build/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/assets/font-awesome/css/font-awesome.css">
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    
+    <!-- <link rel="stylesheet" href="assets/plugins/icheck-1.0.2/skins/minimal/grey.css">
+    
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-dropdown/dropdown.css">
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-icon/icon.min.css">
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-image/image.min.css">
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-label/label.min.css">
+    <link rel="stylesheet" href="assets/plugins/semantic-ui-transition/transition.css">
+    
+    <link rel="stylesheet" href="assets/plugins/"> -->
+    
+    <link rel="stylesheet" href="../../build/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="wrap">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary landing_navbar_main">
+            <div class="container__land publicNavbar ">
+                <a class="navbar-brand" href="/build/home"><img src="../../static/assets/images/scrum-slate-logo.svg"
+                        alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar_collapse_landing_page collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav list_nav Landding_page_navbar">
+                        <li class="nav-item"><a class="nav-bar-link" id="home" href="/build/home">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-bar-link" id="feature" href="/build/features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-bar-link" id="aboutUs" href="/build/about-us">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-bar-link" id="pricing" href="/build/pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-bar-link" id="contactUs" href="/build/contactUs">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-bar-link" id="chromeExtension" href="/build/chrome-extension">Extension</a>
+                        </li>
+                    </ul>
+                    <div class="search_button">
+                        <button class="btn btn-primary sign-in">Sign In</button>
+                        <button class="btn btn-primary btn__signup">Sign Up</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<section>
+    <div class="aboutus_page padding-b-blog">
+        <div class="container__land">
+            <div class="text-center top-text ">
+                <h1>What is Agile Project Management</h1>
+            </div>
+        </div>
+    </div>
+    <div class="agile_card_section mb-2">
+        <div class="container__land">
+            <div class="meta-cards row mb-5">
+                <div class="col-md-3">
+                    <h4>Table of Content</h4>
+                    <hr>
+                    <nav id="toc">
+                        <ul class="list-unstyled">
+                            <li class="agile__li"><a href="#section1" class="active">Introduction</a></li>
+                            <li class="agile__li"><a href="#section2" class="">Agile History</a></li>
+                            <li class="agile__li"><a href="#section3" class="">Agile Manifesto</a></li>
+                            <li class="agile__li"><a href="#section4" class="">Principles of Agile</a></li>
+                            <li class="agile__li"><a href="#section5" class="">Agile Frameworks (Scrum and Kanban)</a>
+                            </li>
+                            <li class="agile__li"><a href="#section6" class="">Agile Workflow</a></li>
+                            <li class="agile__li"><a href="#section7" class="">Conclusion</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9 agile__content">
+                    <section id="section1" class="mb-4">
+                        <h4>Introduction</h4>
+                        <div>
+                            <p class="padding-top-19">Agile project management is a popular methodology used in software
+                                development and other industries to manage projects in an iterative and flexible manner.
+                                This approach emphasizes collaboration, continuous improvement, and delivering
+                                high-quality products that meet the needs of customers.</p>
+                            <p>It is based on the idea that projects should be broken down into smaller, manageable
+                                pieces, and that the team should be empowered to make decisions and adapt to changing
+                                requirements.</p>
+                        </div>
+                    </section>
+                    <section id="section2" class="mb-4">
+                        <h4>Agile History</h4>
+                        <div>
+                            <p class="padding-top-19">The concept of Agile project management can be traced back to the
+                                1990s, when a group of software developers began to question traditional project
+                                management methods. They found that these methods were too rigid and did not allow for
+                                the flexibility and adaptability that was needed to deliver high-quality software in a
+                                rapidly changing environment.</p>
+                        </div>
+                    </section>
+                    <section id="section3" class="mb-4">
+                        <h4>Agile Manifesto</h4>
+                        <div>
+                            <p class="padding-top-19">In 2001, a group of 17 software developers came together to create
+                                the Agile Manifesto, which outlines the values and principles that guide Agile project
+                                management. The manifesto emphasizes individuals and interactions, working software,
+                                customer collaboration, and responding to change.</p>
+                        </div>
+                    </section>
+                    <section id="section4" class="mb-4">
+                        <h4>Principles of Agile</h4>
+                        <div>
+                            <p class="padding-top-19">The Agile Manifesto outlines 12 principles that guide Agile
+                                project management. These principles include:</p>
+                            <ul class="backlog-details refinement">
+                                <li>Our highest priority is to satisfy the customer through early and continuous
+                                    delivery of valuable software.</li>
+                                <li>Working software is the primary measure of progress.</li>
+                                <li>Deliver working software frequently, with a preference to the shorter timescale.
+                                </li>
+                                <li>Business people and developers must work together daily throughout the project.</li>
+                                <li>Build projects around motivated individuals. Give them the environment and support
+                                    they need, and trust them to get the job done.</li>
+                                <li>The most efficient and effective method of conveying information to and within a
+                                    development team is face-to-face conversation.</li>
+                                <li>Working software is the primary measure of progress.</li>
+                                <li>Agile processes promote sustainable development. The sponsors, developers, and users
+                                    should be able to maintain a constant pace indefinitely.</li>
+                                <li>Continuous attention to technical excellence and good design enhances agility.</li>
+                                <li>Simplicity--the art of maximizing the amount of work not done--is essential.</li>
+                                <li>The best architectures, requirements, and designs emerge from self-organizing teams.
+                                </li>
+                                <li>At regular intervals, the team reflects on how to become more effective, then tunes
+                                    and adjusts its behavior accordingly.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="section5" class="mb-4">
+                        <h4>Agile Frameworks (Scrum and Kanban)</h4>
+                        <div>
+                            <p class="padding-top-19">Scrum and Kanban are the two most popular Agile frameworks used in
+                                software development.</p>
+                            <h4 class="mb-3 f-s-20">What is Scrum?</h4>
+                            <p>Scrum is a framework that emphasizes time-boxed sprints and cross-functional teams. It
+                                involves a set of roles, ceremonies, and artifacts that help teams to deliver working
+                                software in short iterations. The roles in Scrum include the Product Owner, Scrum
+                                Master, and Development Team. The ceremonies include Sprint Planning, Daily Stand-ups,
+                                Sprint Review, and Sprint Retrospective. The artifacts include the Product Backlog,
+                                Sprint Backlog, and Increment.</p>
+                            <h4 class="mb-3 f-s-20">What is Kanban?</h4>
+                            <p>Kanban, on the other hand, is a framework that emphasizes continuous flow and visualizing
+                                work. It is based on the principles of just-in-time production and the Toyota Production
+                                System. Kanban involves visualizing work on a board and limiting work in progress to
+                                improve flow and reduce waste. It does not have time-boxed iterations like Scrum, but
+                                instead focuses on continuous delivery of working software.</p>
+                        </div>
+                    </section>
+                    <section id="section6" class="mb-4">
+                        <h4>Agile Workflow</h4>
+                        <div>
+                            <p class="padding-top-19">The Agile workflow is an iterative process that involves planning,
+                                executing, and delivering working software in short iterations. The Agile workflow
+                                typically involves the following steps:</p>
+                            <ul class="backlog-details list_unstyle">
+                                <li><b>Planning:</b> In this phase, the team works with the product owner to create a
+                                    product backlog, which is a prioritized list of features and requirements for the
+                                    project. The team also creates a sprint backlog, which is a list of tasks that need
+                                    to be completed during the sprint.</li>
+                                <li><b>Execution:</b> During the execution phase, the team works to complete the tasks
+                                    in the sprint backlog. This involves daily stand-ups, where the team discusses
+                                    progress and any obstacles they are facing. The team also conducts regular sprint
+                                    reviews to demonstrate the working software to the product owner and other
+                                    stakeholders.</li>
+                                <li><b>Delivery:</b> At the end of the sprint, the team delivers the working software to
+                                    the product owner. This involves a sprint retrospective, where the team reflects on
+                                    what went well and what could be improved in the next sprint.</li>
+                            </ul>
+                        </div>
+                    </section>
+                    <section id="section7" class="mb-4">
+                        <h4>Conclusion</h4>
+                        <div>
+                            <p class="padding-top-19">In a nutshell, Agile project management methodology is a flexible
+                                and collaborative approach to deliver software that is adaptable to changing
+                                requirements and meets the needs of their customers. Whether you are a software
+                                developer, project manager, or business owner, Agile project management can help you
+                                deliver high-quality products in a timely and efficient manner.</p>
+                            <p><a href="/" target="_blank">Scrum Slate</a> is a powerful Agile project management tool
+                                that provides teams with advanced features and tools to plan, develop, and deliver
+                                high-quality products using the Scrum and Kanban frameworks. With <a href="/"
+                                    target="_blank">Scrum Slate</a>, teams can manage and prioritize their work in
+                                progress using features such as the Sprint planner, backlog manager, and progress board.
+                            </p>
+                            <p>Advanced Reports and Analytics can help you to determine team velocity, find bottlenecks,
+                                and improve overall productivity. You can generate detailed reports on sprint
+                                performance, team velocity, and work item status. These reports can help you to identify
+                                trends, track progress over time, and make informed decisions about how to optimize your
+                                team's workflow.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="footer_wrapper linear-bg py-5 ">
+  <div class="footer_content_wrapper">
+    <div class="prob_padding">
+      <div class="container__land">
+        <div class="row ">
+          <div class="col-md-3 col-sm-3 col-sx-12">
+            <img class="cursor_pointer" src="../../static/assets/images/scrum-slate-logo.svg">
+            <p class="logo_para responsive_text mt-4">Discover a tool designed to transform your vision into reality,
+              one step at a time.</p>
+            <div class="d-flex mt-4 ad-mrgin"><a href="https://www.facebook.com/scrumslate1/" target="_blank"
+                rel="noopener noreferrer" class="btn zack mx-1">
+                <img class="mx-1" src="../../static/assets/images/facebook.svg" alt="Facebook"></a><a
+                href="https://www.linkedin.com/company/scrum-slate/" target="_blank" rel="noopener noreferrer"
+                class="btn zack mx-1">
+                <img class="mx-1" src="../../static/assets/images/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-sx-12 footer_col_four">
+            <h4 class="responsive_small_heading fw-6 ">Links</h4>
+            <ul class="list-unstyled">
+              <li class="responsive_text"><a class="homes" href="/build/home">Home</a></li>
+              <li class="responsive_text"><a href="/build/features">Features</a></li>
+              <li class="responsive_text"><a href="/build/about-us">About Us</a></li>
+              <li class="responsive_text"><a href="/build/chrome-extension">Extension</a></li>
+              <li class="responsive_text"><a href="#">Mobile App</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3 col-sx-12 footer_col_four fits">
+            <h4 class="responsive_small_heading fw-6">Go Agile</h4>
+            <ul class="list-unstyled">
+              <li class="responsive_text"><a href="/build/agile">What is Agile?</a></li>
+              <li class="responsive_text"><a href="/build/kanban">Scrum VS Kanban</a></li>
+              <li class="responsive_text"><a href="/build/backlog-refinement">Backlog Refinement</a></li>
+              <li class="responsive_text"><a href="/build/sprint-planing">Sprint Planing</a></li>
+              <li class="responsive_text"><a href="/build/bug-tracking">Bug Tracking</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-sm-3  col-sx-12 footer_col_four rutes">
+            <h4 class="responsive_small_heading fw-6">Resources</h4>
+            <ul class="list-unstyled">
+              <li class="responsive_text"><a href="/build/contactUs">Contact Us</a></li>
+              <li class="responsive_text"><a href="#">Latest Updates</a></li>
+              <li class="responsive_text"><a href="#">Help Doc</a></li>
+              <li class="responsive_text"><a href="/build/privacy-policy">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<!-- /wrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../static/assets/js/bootstrap.min.js"></script>
+
+
+<!-- <script src="assets/plugins/icheck-1.0.2/icheck.js"></script> -->
+
+
+<!-- <script src="assets/plugins/js/"></script> -->
+<script src="../../static/assets//js/main.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.2/axios.min.js"
+    integrity="sha512-JSCFHhKDilTRRXe9ak/FJ28dcpOJxzQaCd3Xg8MyF6XFjODhy/YMCM8HW0TFDckNHWUewW+kfvhin43hKtJxAw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $('.testimonials-slide').slick({
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    });
+</script>
+
+
+<script>
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+        var links = document.querySelectorAll('#toc a');
+
+        links.forEach(function (link) {
+            link.addEventListener('click', function () {
+                // Remove active class from all links
+                links.forEach(function (link) {
+                    link.classList.remove('active');
+                });
+
+                // Add active class to the clicked link
+                this.classList.add('active');
+            });
+        });
+    });
+
+
+    const activeitem = window.location.pathname;
+
+    if (activeitem === "/build/home.html") {
+        $("#home").addClass("active");
+    } else if (activeitem === "/build/features.html") {
+        $("#feature").addClass("active");
+    } else if (activeitem === "/build/about-us.html") {
+        $("#aboutUs").addClass("active");
+    } else if (activeitem === "/build/pricing.html") {
+        $("#pricing").addClass("active");
+    } else if (activeitem === "/build/contactUs.html") {
+        $("#contactUs").addClass("active");
+    } else if (activeitem === "/build/chrome-extension.html") {
+        $("#chromeExtension").addClass("active");
+    }
+
+
+    //    common URl
+
+    const baseUrl = "https://dev-api.scrumslate.com/api"
+    // api call in home page Subscribe For Update form
+    const subscribeValue = $("#subscribeValue");
+    const subscribeButton = $("#subscibe_btn"); // corrected typo
+    subscribeButton.prop("disabled", true);
+
+    function isValidEmail(email) {
+        const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return re.test(email);
+    }
+
+    subscribeValue.on("input", function () {
+        const inputValue = subscribeValue.val();
+        console.log("Current input value:", inputValue);
+        if (isValidEmail(inputValue)) {
+            subscribeButton.prop("disabled", false);
+        } else {
+            subscribeButton.prop("disabled", true);
+        }
+    });
+
+    $(document).ready(function () {
+
+
+        $("#subscriptionFrom").on("submit", function (event) {
+            event.preventDefault();
+            const inputValue = subscribeValue.val();
+
+            const data = { email: inputValue };
+
+            const url = `${baseUrl}/subcribe-for-newsletter`;
+
+            axios.post(url, data, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(function (response) {
+                    $("#subscriptionFrom")[0].reset();
+                    Toastify({
+                        text: "Success! You've subscribed to the Newsletter",
+                        duration: 3000, // 3 seconds
+                        gravity: "top",
+                        close: true, // Display toast at the top
+                        position: "right", // Align toast to the right
+                        backgroundColor: "#ffff", // Custom background color
+                        style: {
+                            color: "#0009" // Custom text color
+                        }
+                    }).showToast();
+                    console.log("Success:", response.data);
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        });
+    });
+
+
+    // call api in contact us page
+
+
+    const contactForm = $("#contactUsFrom");
+    const name = $("#name");
+    const email = $("#email");
+    const message = $("#message");
+
+    $(document).ready(function () {
+        contactForm.on("submit", function (event) {
+            event.preventDefault();
+
+            const nameValue = name.val();
+            const emailValue = email.val();
+            const messageValue = message.val();
+
+            const formValues = {
+                name: nameValue,
+                email: emailValue,
+                message: messageValue
+            };
+
+            const contactUrl = `${baseUrl}/contact-us`;
+            axios.post(contactUrl, formValues, {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(function (response) {
+                    contactForm[0].reset();
+                    Toastify({
+                        text: response.data.message,
+                        duration: 3000,
+                        gravity: "top",
+                        close: true,
+                        position: "right",
+                        backgroundColor: "#ffff",
+                        style: {
+                            color: "#0009"
+                        }
+                    }).showToast();
+                    console.log("Success:", response.data);
+                })
+                .catch(function (error) {
+                    console.error("Error:", error);
+                });
+        });
+
+        // save comment message
+
+        $("#saveButton").click(function (event) {
+            event.preventDefault();
+            const commentMessage = $("#commentFiled").val().trim();
+            if (!commentMessage) {
+                Toastify({
+                    text: `Warning! Please add comment here`,
+                    duration: 3000, // 3 seconds
+                    gravity: "top",
+                    close: true, // Display toast at the top
+                    position: "right", // Align toast to the right
+                    backgroundColor: "#ffff", // Custom background color
+                    style: {
+                        color: "#0009" // Custom text color
+                    }
+                }).showToast();
+                return;
+            }
+            const currentDate = new Date().toLocaleDateString("en-US", {
+                year: "numeric",
+                month: "short",
+                day: "numeric"
+            });
+
+            const newComment = `
+            <div class="file_comment" >
+                <div class="file_comment_user">
+                    <div style="width: 24px; height: 24px; background-color: rgb(0, 83, 35); color: rgb(255, 255, 255); text-align: center; line-height: 24px; font-size: 12px; font-weight: 500; border-radius: 6px;">
+                        G
+                    </div>
+                </div>
+                <div class="file_comment_detail ms-3">
+                    <div class="d-flex align-items-center">
+                        <span class="file_comment_userName textEllipse text-capitalize f-14 add_cursor" aria-label="Guest">guest </span>
+                        <span class="file_comment_time ms-3 f-12">${currentDate}</span>
+                    </div>
+                    <p class="file_comment_text mb-0 capitalize-first f-14">${commentMessage}</p>
+                </div>
+            </div>
+    
+    `;
+
+            $("#commentBox").append(newComment);
+            $("#commentFiled").val('');
+
+
+        });
+
+    });
+
+
+
+
+</script>
+
+<script type="text/javascript">
+  var style = 'assets/css/style.css?' + Math.random();;
+</script>
+
+<script type="text/javascript">
+  document.write('<link href="' + style + '" rel="stylesheet">');
+</script>
+</body>
+
+</html>
