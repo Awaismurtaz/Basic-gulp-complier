@@ -12,6 +12,7 @@
 
     a {
       color: #0052cc;
+
       &:hover {
         color: #0052cc;
       }
@@ -33,6 +34,7 @@
 
 .refinement {
   margin-left: 16px;
+
   li {
     font-size: 16px;
   }
@@ -60,4 +62,193 @@
 
 .padding-top-19 {
   padding-top: 19px !important;
+}
+
+.padding-top-19 {
+  padding-top: 19px !important;
+}
+
+.padding-bottom-30 {
+  padding-bottom: 30px;
+}
+
+.padding-right-12 {
+  padding-right: 12px !important;
+}
+
+.bg-unset {
+  background-color: unset !important;
+}
+
+.bx-shadow {
+  box-shadow: unset !important;
+}
+
+.w-20rem {
+  width: 20rem;
+}
+
+.padding-30 {
+  padding: 30px;
+}
+
+.padding-y-20 {
+  padding: 20px 0px;
+}
+
+.fw-6 {
+  font-weight: 600 !important;
+}
+
+.fw-5 {
+  font-weight: 500 !important;
+}
+
+.fs-48 {
+  font-size: 48px !important;
+}
+
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.text-light-gray {
+  color: #707070;
+}
+
+.text-light-black {
+  color: #292929;
+}
+
+.object-fit-contain {
+  object-fit: contain !important;
+}
+
+/* Custom CSS */
+.blogTopMain {
+  padding-bottom: 40vh !important;
+}
+
+.blogMain {
+  margin-top: -13%;
+}
+
+.blogList {
+  margin-top: 8%;
+}
+
+// .blogBody {
+//   .titleLink {
+//     cursor: pointer;
+
+//     &:hover {
+//       color: #0052cc;
+//     }
+//   }
+// }
+
+// view blog
+.viewBlog {
+  padding: 0px 0px 10% 0px;
+}
+
+.viewImage {
+  padding-top: 20px;
+
+  .imageBox {
+    height: 27rem;
+    border-radius: 10px;
+    padding: 10px;
+
+    .image {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
+
+}
+
+
+.blogProperty {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px 0px;
+  font-size: 12px;
+
+  .propertyValue {
+    background-color: #E9F3FF;
+    color: #2684FF;
+    padding: 5px 12px;
+    border-radius: 12px;
+  }
+}
+
+.profileBox {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  .userImage {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.realesBolg {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-bottom: 10px;
+
+  .blogImage {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+.blogForm {
+  padding-top: 20px;
+
+  button,
+  input {
+    padding: 15px 12px;
+    border-radius: 10px;
+
+    &::placeholder {
+      font-size: 12px;
+      color: #707070;
+    }
+  }
+
+  button {}
+}
+
+.singleBlog {
+  .titleLink {
+    transition: color 0.3s ease;
+  }
+
+  &:hover {
+    .titleLink {
+      color: #0052cc;
+    }
+  }
+}
+
+.blogCard {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .102) !important;
+  border: none !important;
+}
+
+
+
+@media (max-width:599px) {
+
+  .col-md-4,
+  col {
+    display: flex;
+    justify-content: center !important;
+  }
 }
